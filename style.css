@@ -36,6 +36,7 @@ html, body {
     background-position-x: -10%;
     background-position-y: -50px;
     background-attachment: fixed;
+    box-shadow: 0 40px 50px rgb(0, 0, 0, 0.2);
 
 }
 
@@ -50,11 +51,17 @@ html, body {
 
 }
 
-.left-container img {
+.left-container img.box-img {
 
     position: relative;
     top: 215px;
     right: 95px;
+
+}
+
+.left-container img.woman-mobile {
+
+    display: none;
 
 }
 
@@ -65,6 +72,12 @@ html, body {
 
 }
 
+.faq-container h1 {
+
+    font-size: 35px;
+    color: hsl(238, 29%, 16%);
+
+}
 
 .faq-button {
 
@@ -101,3 +114,200 @@ div.faq-button:hover {
     cursor: pointer;
 
 }
+
+/*** Responsividade ***/
+
+/* Laptop L 1440px */
+
+@media screen and (max-width: 1440px) {
+
+    .container {
+
+        width: 60%;
+    
+    }
+
+    .card {
+
+        background-size: 65%;
+        background-position-x: -56%;
+        background-position-y: -80px;
+
+    }
+
+    .left-container {
+
+        background-size: 105%;
+    
+    }
+
+}
+
+/* Laptop 1024px */
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+
+        width: 70%;
+    
+    }
+
+    .card {
+
+        background-size: 80%;
+        background-position-x: -360px;
+        background-position-y: -50px;
+
+    }
+
+    .left-container {
+
+        background-size: 110%;
+        background-position-y: 100px;
+    
+    }
+
+    .left-container img.box-img {
+
+        top: 220px;
+        right: 70px;
+    
+    }
+
+}
+
+/* Tablet 768px */
+
+@media screen and (max-width: 768px) {
+
+    .card {
+
+        display: block;
+        background-size: 50%;
+        background-position-x: 50%;
+        background-position-y: -40px;
+        min-height: 600px;
+
+    }
+
+    .left-container {
+
+        width: 100%;
+        background-image: none;
+    
+    }
+
+    .faq-container {
+
+        width: 90%;
+        margin: 0 auto;
+    
+    }
+
+    .faq-container h1 {
+
+        text-align: center;
+
+    }
+
+    .left-container img.box-img {
+
+        display: none;
+    
+    }
+
+    .left-container img.woman-mobile {
+
+        display: block;
+        margin: 0 auto;
+        margin-right: 75px;
+        margin-top: -120px;
+        width: 80%;
+    
+    }
+
+}
+
+/* Mobile L 425px */
+
+@media screen and (max-width: 425px) {
+
+    .container {
+
+        width: 90%;
+
+    }
+
+    .card {
+
+        min-height: 500px;
+        background-image: url(images/bg-pattern-mobile.svg);
+        background-size: 65%;
+        background-position-y: 185px;
+        background-position-x: 48%;
+        
+
+    }
+
+    .left-container {
+
+        width: 100%;
+        background-image: none;
+    
+    }
+
+    .left-container img.woman-mobile {
+
+        
+        margin-right: 60px;
+        margin-top: -120px;
+
+    }
+
+}
+
+/* Mobile M 375px */
+
+@media screen and (max-width: 375px) {
+
+    .card {
+
+        min-height: 540px;
+        background-position-y: 170px;
+
+    }
+
+    .left-container img.woman-mobile {
+
+        
+        margin-right: 50px;
+        margin-top: -105px;
+        margin-bottom: 50px;
+
+    }
+
+}
+
+/* Mobile S 320px */
+
+@media screen and (max-width: 320px) {
+
+    .card {
+
+        min-height: 580px;
+        background-position-y: 150px;
+
+    }
+
+    .left-container img.woman-mobile {
+
+        
+        margin-right: 45px;
+        margin-top: -90px;
+        margin-bottom: 50px;
+
+    }
+
+}
+
